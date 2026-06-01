@@ -18,16 +18,16 @@ A web-based library management system built with PHP Native, MySQL, and Bootstra
 ## Screenshots
 
 ### Login Page
-![Login](screenshots/login.png)
+![Login](screenshots/login.PNG)
 
 ### Dashboard
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/dashboard.PNG)
 
 ### Books Management
-![Books](screenshots/books.png)
+![Books](screenshots/book.PNG)
 
 ### Reports
-![Reports](screenshots/reports.png)
+![Reports](screenshots/report.PNG)
 
 ## Technology
 
