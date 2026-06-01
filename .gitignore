@@ -1,0 +1,13 @@
+# Environment & config
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Uploaded files (keep directory)
+uploads/*
+!uploads/.gitkeep

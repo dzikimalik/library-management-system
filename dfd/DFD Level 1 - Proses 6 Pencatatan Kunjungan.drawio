@@ -1,0 +1,115 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="DFD-L1-P6" name="Proses 6 - Pencatatan Kunjungan">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p6-ext-anggota" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" value="Anggota" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-ext-kepala" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" value="Kepala Perpustakaan" vertex="1">
+          <mxGeometry height="60" width="130" x="80" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-proses" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;" value="6. Pencatatan Kunjungan" vertex="1">
+          <mxGeometry height="50" width="180" x="1020" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-61" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;" value="6.1 Catat Kunjungan Anggota" vertex="1">
+          <mxGeometry height="70" width="170" x="380" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-62" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;" value="6.2 Catat Kunjungan Non-Anggota" vertex="1">
+          <mxGeometry height="70" width="170" x="380" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-63" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;" value="6.3 Lihat Laporan Kunjungan" vertex="1">
+          <mxGeometry height="70" width="170" x="380" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-ds" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;fontSize=13;" value="Tabel Kunjungan" vertex="1">
+          <mxGeometry height="70" width="130" x="720" y="360" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows from Anggota to sub-processes -->
+        <mxCell id="p6-arrow-anggota-61" edge="1" parent="1" source="p6-ext-anggota" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p6-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-label-anggota-61" connectable="0" parent="p6-arrow-anggota-61" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="data_kunjungan" vertex="1">
+          <mxGeometry relative="1" x="-0.15" y="-1" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows from Kepala to sub-processes -->
+        <mxCell id="p6-arrow-kepala-63" edge="1" parent="1" source="p6-ext-kepala" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p6-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-label-kepala-63" connectable="0" parent="p6-arrow-kepala-63" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="kriteria_laporan" vertex="1">
+          <mxGeometry relative="1" x="-0.15" y="-1" as="geometry" />
+        </mxCell>
+
+        <!-- Return arrows -->
+        <mxCell id="p6-arrow-61-anggota" edge="1" parent="1" source="p6-61" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p6-ext-anggota">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="185" />
+              <mxPoint x="200" y="270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p6-label-61-anggota" connectable="0" parent="p6-arrow-61-anggota" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="info_kunjungan" vertex="1">
+          <mxGeometry relative="1" x="-0.25" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p6-arrow-63-kepala" edge="1" parent="1" source="p6-63" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p6-ext-kepala">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="510" />
+              <mxPoint x="210" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p6-label-63-kepala" connectable="0" parent="p6-arrow-63-kepala" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="laporan_kunjungan" vertex="1">
+          <mxGeometry relative="1" x="-0.25" y="-1" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows to data store -->
+        <mxCell id="p6-arrow-61-ds" edge="1" parent="1" source="p6-61" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p6-ds">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-label-61-ds" connectable="0" parent="p6-arrow-61-ds" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="data_kunjungan" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p6-arrow-ds-61" edge="1" parent="1" source="p6-ds" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p6-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-label-ds-61" connectable="0" parent="p6-arrow-ds-61" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="info_kunjungan" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p6-arrow-62-ds" edge="1" parent="1" source="p6-62" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p6-ds">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-label-62-ds" connectable="0" parent="p6-arrow-62-ds" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="data_kunjungan" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p6-arrow-ds-62" edge="1" parent="1" source="p6-ds" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p6-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-label-ds-62" connectable="0" parent="p6-arrow-ds-62" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="info_kunjungan" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p6-arrow-63-ds" edge="1" parent="1" source="p6-63" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p6-ds">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-label-63-ds" connectable="0" parent="p6-arrow-63-ds" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="kriteria_laporan" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p6-arrow-ds-63" edge="1" parent="1" source="p6-ds" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p6-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p6-label-ds-63" connectable="0" parent="p6-arrow-ds-63" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="data_kunjungan" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

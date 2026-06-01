@@ -1,0 +1,249 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="DFD-L1-P2" name="Proses 2 - Pengelolaan Data Buku">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p2-ext-kepala" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" value="Kepala Perpustakaan" vertex="1">
+          <mxGeometry height="60" width="130" x="80" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-ext-pegawai" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" value="Pegawai" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-ext-anggota" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" value="Anggota" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-proses" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;" value="2. Pengelolaan Data Buku" vertex="1">
+          <mxGeometry height="50" width="180" x="1020" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-21" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;" value="2.1 Input Data Buku" vertex="1">
+          <mxGeometry height="70" width="150" x="370" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-22" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;" value="2.2 Edit Data Buku" vertex="1">
+          <mxGeometry height="70" width="150" x="370" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-23" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;" value="2.3 Hapus Data Buku" vertex="1">
+          <mxGeometry height="70" width="150" x="370" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-24" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;" value="2.4 Lihat Data Buku" vertex="1">
+          <mxGeometry height="70" width="150" x="370" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-ds" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;fontSize=13;" value="Tabel Buku" vertex="1">
+          <mxGeometry height="80" width="130" x="710" y="360" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows from external entities to sub-processes -->
+        <mxCell id="p2-arrow-kepala-21" edge="1" parent="1" source="p2-ext-kepala" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p2-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="195" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2-label-kepala-21" connectable="0" parent="p2-arrow-kepala-21" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="data_buku" vertex="1">
+          <mxGeometry relative="1" x="-0.15" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2-arrow-pegawai-21" edge="1" parent="1" source="p2-ext-pegawai" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p2-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2-label-pegawai-21" connectable="0" parent="p2-arrow-pegawai-21" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="data_buku" vertex="1">
+          <mxGeometry relative="1" x="-0.15" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2-arrow-pegawai-22" edge="1" parent="1" source="p2-ext-pegawai" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p2-22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2-label-pegawai-22" connectable="0" parent="p2-arrow-pegawai-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="data_buku" vertex="1">
+          <mxGeometry relative="1" x="-0.15" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2-arrow-kepala-22" edge="1" parent="1" source="p2-ext-kepala" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p2-22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2-label-kepala-22" connectable="0" parent="p2-arrow-kepala-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="data_buku" vertex="1">
+          <mxGeometry relative="1" x="-0.15" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2-arrow-pegawai-23" edge="1" parent="1" source="p2-ext-pegawai" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p2-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-label-pegawai-23" connectable="0" parent="p2-arrow-pegawai-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="data_buku" vertex="1">
+          <mxGeometry relative="1" x="-0.15" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2-arrow-kepala-23" edge="1" parent="1" source="p2-ext-kepala" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p2-23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="325" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2-label-kepala-23" connectable="0" parent="p2-arrow-kepala-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="data_buku" vertex="1">
+          <mxGeometry relative="1" x="-0.15" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2-arrow-anggota-24" edge="1" parent="1" source="p2-ext-anggota" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p2-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-label-anggota-24" connectable="0" parent="p2-arrow-anggota-24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="cari_buku" vertex="1">
+          <mxGeometry relative="1" x="-0.15" y="-1" as="geometry" />
+        </mxCell>
+
+        <!-- Return arrows -->
+        <mxCell id="p2-arrow-21-kepala" edge="1" parent="1" source="p2-21" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p2-ext-kepala">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="175" />
+              <mxPoint x="210" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2-label-21-kepala" connectable="0" parent="p2-arrow-21-kepala" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="info_buku" vertex="1">
+          <mxGeometry relative="1" x="-0.25" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2-arrow-21-pegawai" edge="1" parent="1" source="p2-21" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p2-ext-pegawai">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="195" />
+              <mxPoint x="200" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2-label-21-pegawai" connectable="0" parent="p2-arrow-21-pegawai" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="info_buku" vertex="1">
+          <mxGeometry relative="1" x="-0.35" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2-arrow-22-kepala" edge="1" parent="1" source="p2-22" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p2-ext-kepala">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="300" />
+              <mxPoint x="210" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2-label-22-kepala" connectable="0" parent="p2-arrow-22-kepala" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="info_buku" vertex="1">
+          <mxGeometry relative="1" x="-0.25" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2-arrow-22-pegawai" edge="1" parent="1" source="p2-22" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p2-ext-pegawai">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="315" />
+              <mxPoint x="200" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2-label-22-pegawai" connectable="0" parent="p2-arrow-22-pegawai" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="info_buku" vertex="1">
+          <mxGeometry relative="1" x="-0.35" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2-arrow-23-kepala" edge="1" parent="1" source="p2-23" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p2-ext-kepala">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="420" />
+              <mxPoint x="210" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2-label-23-kepala" connectable="0" parent="p2-arrow-23-kepala" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="info_buku" vertex="1">
+          <mxGeometry relative="1" x="-0.25" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2-arrow-23-pegawai" edge="1" parent="1" source="p2-23" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p2-ext-pegawai">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="435" />
+              <mxPoint x="200" y="415" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2-label-23-pegawai" connectable="0" parent="p2-arrow-23-pegawai" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="info_buku" vertex="1">
+          <mxGeometry relative="1" x="-0.25" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2-arrow-24-anggota" edge="1" parent="1" source="p2-24" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p2-ext-anggota">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="550" />
+              <mxPoint x="200" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2-label-24-anggota" connectable="0" parent="p2-arrow-24-anggota" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="info_buku" vertex="1">
+          <mxGeometry relative="1" x="-0.25" y="-1" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows between sub-processes and data store -->
+        <mxCell id="p2-arrow-21-ds" edge="1" parent="1" source="p2-21" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p2-ds">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-label-21-ds" connectable="0" parent="p2-arrow-21-ds" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="data_buku" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2-arrow-ds-21" edge="1" parent="1" source="p2-ds" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p2-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-label-ds-21" connectable="0" parent="p2-arrow-ds-21" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="info_buku" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2-arrow-22-ds" edge="1" parent="1" source="p2-22" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p2-ds">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-label-22-ds" connectable="0" parent="p2-arrow-22-ds" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="data_buku" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2-arrow-ds-22" edge="1" parent="1" source="p2-ds" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p2-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-label-ds-22" connectable="0" parent="p2-arrow-ds-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="info_buku" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2-arrow-23-ds" edge="1" parent="1" source="p2-23" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p2-ds">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-label-23-ds" connectable="0" parent="p2-arrow-23-ds" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="id_buku" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2-arrow-ds-23" edge="1" parent="1" source="p2-ds" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p2-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-label-ds-23" connectable="0" parent="p2-arrow-ds-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="info_buku" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2-arrow-24-ds" edge="1" parent="1" source="p2-24" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p2-ds">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-label-24-ds" connectable="0" parent="p2-arrow-24-ds" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="kriteria_cari" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2-arrow-ds-24" edge="1" parent="1" source="p2-ds" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p2-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2-label-ds-24" connectable="0" parent="p2-arrow-ds-24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="info_buku" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

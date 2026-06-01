@@ -1,0 +1,243 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="DFD-L1-P5" name="Proses 5 - Pengembalian dan Denda">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p5-ext-pegawai" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" value="Pegawai" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-ext-kepala" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" value="Kepala Perpustakaan" vertex="1">
+          <mxGeometry height="60" width="130" x="80" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-ext-anggota" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;" value="Anggota" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-proses" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;" value="5. Pengembalian &amp; Denda" vertex="1">
+          <mxGeometry height="50" width="180" x="1020" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-51" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;" value="5.1 Proses Pengembalian Buku" vertex="1">
+          <mxGeometry height="70" width="170" x="380" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-52" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;" value="5.2 Hitung Denda Keterlambatan" vertex="1">
+          <mxGeometry height="70" width="170" x="380" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-53" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;" value="5.3 Catat Pembayaran Denda" vertex="1">
+          <mxGeometry height="70" width="170" x="380" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-54" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;" value="5.4 Lihat Riwayat Pengembalian &amp; Denda" vertex="1">
+          <mxGeometry height="70" width="170" x="380" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-ds-pengembalian" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;fontSize=13;" value="Tabel Pengembalian" vertex="1">
+          <mxGeometry height="60" width="130" x="740" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-ds-denda" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;fontSize=13;" value="Tabel Denda" vertex="1">
+          <mxGeometry height="60" width="130" x="740" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-ds-peminjaman" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;fontSize=13;" value="Tabel Peminjaman" vertex="1">
+          <mxGeometry height="60" width="130" x="740" y="510" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows from Pegawai -->
+        <mxCell id="p5-arrow-pegawai-51" edge="1" parent="1" source="p5-ext-pegawai" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p5-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-label-pegawai-51" connectable="0" parent="p5-arrow-pegawai-51" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="data_pengembalian" vertex="1">
+          <mxGeometry relative="1" x="-0.15" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p5-arrow-pegawai-52" edge="1" parent="1" source="p5-ext-pegawai" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p5-52">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p5-label-pegawai-52" connectable="0" parent="p5-arrow-pegawai-52" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="data_denda" vertex="1">
+          <mxGeometry relative="1" x="-0.15" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p5-arrow-pegawai-53" edge="1" parent="1" source="p5-ext-pegawai" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p5-53">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p5-label-pegawai-53" connectable="0" parent="p5-arrow-pegawai-53" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="data_pembayaran" vertex="1">
+          <mxGeometry relative="1" x="-0.15" y="-1" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows from Kepala -->
+        <mxCell id="p5-arrow-kepala-54" edge="1" parent="1" source="p5-ext-kepala" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p5-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-label-kepala-54" connectable="0" parent="p5-arrow-kepala-54" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="kriteria_cari" vertex="1">
+          <mxGeometry relative="1" x="-0.15" y="-1" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows from Anggota -->
+        <mxCell id="p5-arrow-anggota-54" edge="1" parent="1" source="p5-ext-anggota" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p5-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-label-anggota-54" connectable="0" parent="p5-arrow-anggota-54" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="kriteria_cari" vertex="1">
+          <mxGeometry relative="1" x="-0.15" y="-1" as="geometry" />
+        </mxCell>
+
+        <!-- Return arrows -->
+        <mxCell id="p5-arrow-51-pegawai" edge="1" parent="1" source="p5-51" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p5-ext-pegawai">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="115" />
+              <mxPoint x="200" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p5-label-51-pegawai" connectable="0" parent="p5-arrow-51-pegawai" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="info_pengembalian" vertex="1">
+          <mxGeometry relative="1" x="-0.25" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p5-arrow-52-pegawai" edge="1" parent="1" source="p5-52" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p5-ext-pegawai">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="260" />
+              <mxPoint x="200" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p5-label-52-pegawai" connectable="0" parent="p5-arrow-52-pegawai" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="info_denda" vertex="1">
+          <mxGeometry relative="1" x="-0.25" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p5-arrow-53-pegawai" edge="1" parent="1" source="p5-53" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p5-ext-pegawai">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="400" />
+              <mxPoint x="200" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p5-label-53-pegawai" connectable="0" parent="p5-arrow-53-pegawai" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="info_denda" vertex="1">
+          <mxGeometry relative="1" x="-0.3" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p5-arrow-54-kepala" edge="1" parent="1" source="p5-54" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p5-ext-kepala">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="540" />
+              <mxPoint x="210" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p5-label-54-kepala" connectable="0" parent="p5-arrow-54-kepala" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="info_pengembalian, info_denda" vertex="1">
+          <mxGeometry relative="1" x="-0.3" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p5-arrow-54-anggota" edge="1" parent="1" source="p5-54" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p5-ext-anggota">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="560" />
+              <mxPoint x="200" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p5-label-54-anggota" connectable="0" parent="p5-arrow-54-anggota" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="info_denda" vertex="1">
+          <mxGeometry relative="1" x="-0.3" y="-1" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows to data stores -->
+        <mxCell id="p5-arrow-51-ds1" edge="1" parent="1" source="p5-51" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p5-ds-pengembalian">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-label-51-ds1" connectable="0" parent="p5-arrow-51-ds1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="data_pengembalian" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p5-arrow-ds1-51" edge="1" parent="1" source="p5-ds-pengembalian" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p5-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-label-ds1-51" connectable="0" parent="p5-arrow-ds1-51" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="info_pengembalian" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p5-arrow-51-ds3" edge="1" parent="1" source="p5-51" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p5-ds-peminjaman">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-label-51-ds3" connectable="0" parent="p5-arrow-51-ds3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="status_kembali" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p5-arrow-ds3-51" edge="1" parent="1" source="p5-ds-peminjaman" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p5-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-label-ds3-51" connectable="0" parent="p5-arrow-ds3-51" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="info_peminjaman" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p5-arrow-52-ds2" edge="1" parent="1" source="p5-52" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p5-ds-denda">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-label-52-ds2" connectable="0" parent="p5-arrow-52-ds2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="data_denda" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p5-arrow-ds2-52" edge="1" parent="1" source="p5-ds-denda" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p5-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-label-ds2-52" connectable="0" parent="p5-arrow-ds2-52" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="info_denda" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p5-arrow-53-ds2" edge="1" parent="1" source="p5-53" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p5-ds-denda">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-label-53-ds2" connectable="0" parent="p5-arrow-53-ds2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="status_bayar" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p5-arrow-ds2-53" edge="1" parent="1" source="p5-ds-denda" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p5-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-label-ds2-53" connectable="0" parent="p5-arrow-ds2-53" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="info_denda" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p5-arrow-54-ds1" edge="1" parent="1" source="p5-54" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p5-ds-pengembalian">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-label-54-ds1" connectable="0" parent="p5-arrow-54-ds1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="kriteria_cari" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p5-arrow-ds1-54" edge="1" parent="1" source="p5-ds-pengembalian" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p5-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-label-ds1-54" connectable="0" parent="p5-arrow-ds1-54" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="info_pengembalian" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p5-arrow-54-ds2" edge="1" parent="1" source="p5-54" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p5-ds-denda">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-label-54-ds2" connectable="0" parent="p5-arrow-54-ds2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="kriteria_cari" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p5-arrow-ds2-54" edge="1" parent="1" source="p5-ds-denda" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p5-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-label-ds2-54" connectable="0" parent="p5-arrow-ds2-54" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="info_denda" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+
+        <!-- Flow between sub-processes -->
+        <mxCell id="p5-arrow-51-52" edge="1" parent="1" source="p5-51" style="endArrow=classic;html=1;rounded=0;fontSize=13;" target="p5-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5-label-51-52" connectable="0" parent="p5-arrow-51-52" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;" value="tgl_kembali" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="-1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
